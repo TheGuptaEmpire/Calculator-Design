@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(125 191 127);
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.calculator span {
+    display: grid;
+    width: 70px;
+    height: 60px;
+    font-size: 21px;
+    color: #fff;
+    background-color: rgb(0 34 72);
+    place-items: center;
+    border: 1px solid rgb(44, 43, 43);
+    cursor: pointer;
+}
+
+.calculator span:active {
+    color: #fff;
+    background-color: rgb(0 34 50);
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    font-size: 20px;
+    width: 140px;
+    background-color: #d50000;
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    font-size: 22px;
+    height: 120px;
+}
+
+.calculator span.equal {
+    background-color: rgb(207 169 7);
+}
